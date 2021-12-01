@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:url("/images/pattern-background-desktop.svg");
+    background-size:cover;
+}
+.card{
+    width: 450px;
+    height:600px;
+    border:1px solid white;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    border-radius: 20px 20px 0px 0px;
+}
+h2{
+    margin-top:1em;
+    margin-bottom: 1em;
+    font-weight: 900;
+}
+p{
+    margin-left:70px;
+    margin-right: 70px;
+    text-align: center;
+    color:#BABDCE;
+}
+.div-subscription{
+    height: 79px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    margin-top:1em;
+    margin-bottom: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding:10px;
+}
+
+.text-plan p{
+    display: inline-block;
+    margin-left: 30px;
+}
+.text-plan p:first-of-type{
+    font-weight: 700;
+    color:#000000;
+}
+.text-plan p:last-of-type{
+    color:#BABDCE;
+}
+
+.card a{
+    font-weight: 700;
+}
+.card a:hover{
+    text-decoration: none;
+}
+
+.valid-payment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 350px;
+    margin-left:50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    color:#FFFFFF;
+    font-weight: 100;
+    text-decoration: none;
+    box-shadow: 0px 20px 15px hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+}
+.valid-payment:hover{
+    background-color:hsl(224, 23%, 55%);
+}
+.cancel-payment{
+    margin-top:30px;
+    margin-bottom: 30px;
+    color:#BABDCE;
+    text-decoration: none;
+}
+.cancel-payment:hover{
+    color:hsl(223, 47%, 23%);
+}
+.attribution{
+    position:absolute;
+    bottom: 10px;
+}
+
+@media screen and (max-width:900px){
+    
+    .card{
+        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .card img{
+        width: 370px;
+    }
+    .div-subscription{
+        width: 90%;
+    }
+    .div-subscription img{
+        width: 20%;
+    }
+}
